@@ -1,22 +1,22 @@
 /************************************************************************************
-* Programa: Gerador de vetor com N posiÁıes com menu
-* CÛdigo: Giovani de Alencar Freitas
-* Revis„o: Douglas de Ara˙jo
-* Vers„o: 1.2
-* Curso: 1∫ ADS Noturno
-* licenÁa: Kopimi url: http://www.kopimi.com/
+* Programa: Gerador de vetor com N posi√ß√µes & menu
+* C√≥digo: Giovani de Alencar Freitas
+* Revis√£o: Douglas de Ara√∫jo
+* Vers√£o: 1.2
+* Curso: 1¬∫ ADS Noturno
+* licen√ßa: Kopimi url: http://www.kopimi.com/
 *************************************************************************************/
 #include "stdlib.h"
 #include "stdio.h"
 main(){
-    //declaraÁ„o de vari·veis
+    //declara√ß√£o de vari√°veis
     int lista, tam=0,tam2,vet[tam],cont,x2=1,cont2,temp,vs,sec,y=0,vz;
-    //while imprime o menu sempre que x2=1, x2 n„o È alterada por nenhuma aÁ„o no programa por isso o menu sempre imprime
+    //while imprime o menu sempre que x2=1, x2 n√£o √© alterada por nenhuma a√ß√£o no programa por isso o menu sempre imprime
     while(x2=1){
     printf("\t\t\t\t MENU PRINCIPAL\n\n 1. DEFINICAO DO TAMANHO DO VETOR \n 2. GERACAO DOS DADOS NO VETOR \n 3. ORDENACAO DO VETOR \n 4. BUSCA SEQUENCIAL \n 5. IMPRESSAO DO VETOR \n 6. SAIDA \n ");
     scanf("%i",&lista);
-    system("cls");// limpa a tela apÛs a impress„o
-    // switch-case ativa as opÁıes do menu
+    system("cls");// limpa a tela ap√≥s a impress√£o
+    // switch-case ativa as op√ß√µes do menu
     switch(lista) {
         case 0: 
             printf("opcao invalida \n\n");  
@@ -26,7 +26,7 @@ main(){
 
             printf("Digite o tamanho do vetor \n");
             scanf("%i",&tam2);
-            tam=tam2-1; // ok isso È um recurso tÈcnico pra burlar o tamanho do vetor, como ele j· est· inicializado com 0
+            tam=tam2-1; // ok isso √© um recurso t√©cnico pra burlar o tamanho do vetor, como ele j√° est√° inicializado com 0
             while(tam<=0){
                 
                  printf("Tamanho invalido\n");
@@ -89,7 +89,7 @@ main(){
         // sai do programa
         case 6: 
             printf("\n\n\n\t\t\t\t\t FIM");
-            system("pause>nul"); // >nul n„o exibe msg de saÌda
+            system("pause>nul"); // >nul n√£o exibe msg de sa√≠da
             exit(0); //fecha o programa
         // imprime mensagem de erro caso o usuario escolha uma opcao inexistente    
         default:
